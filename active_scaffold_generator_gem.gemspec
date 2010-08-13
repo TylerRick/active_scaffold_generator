@@ -4,7 +4,7 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{active_scaffold_generator}
+  s.name = %q{active_scaffold_generator_gem}
   s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
-     "active_scaffold_generator.gemspec",
+     "active_scaffold_generator_gem.gemspec",
      "generators/active_scaffold/USAGE",
      "generators/active_scaffold/active_scaffold_generator.rb",
      "generators/active_scaffold/templates/active_scaffold_controller.rb",
