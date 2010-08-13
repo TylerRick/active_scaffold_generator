@@ -5,8 +5,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "active_scaffold_generator"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Generate new active_scaffold controllers with ease}
+    gem.description = %Q{This generator creates a controller with the given name and adds an active_scaffold declaration inside of it, listing all column names and association names, so that you can quickly start customizing it (reordering or removing columns, for example).}
     gem.email = "github.com@tylerrick.com"
     gem.homepage = "http://github.com/TylerRick/active_scaffold_generator"
     gem.authors = ["Tyler Rick"]

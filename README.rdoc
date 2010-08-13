@@ -1,6 +1,11 @@
 = active_scaffold_generator
 
-Description goes here.
+This generator creates a controller with the given name and adds an active_scaffold declaration inside of it, listing all column names and association names, so that you can quickly start customizing it (reordering or removing columns, for example).
+
+It also generates a route to the controller it just created.
+
+Example:
+    ./script/generate active_scaffold admin/tables/orders
 
 == Note on Patches/Pull Requests
  
