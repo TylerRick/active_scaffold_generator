@@ -40,15 +40,15 @@ end
 
 class ActiveScaffoldGenerator < Rails::Generator::NamedBase
   attr_reader :controller_superclass, :model
-  attr_reader :column_names
+  attr_reader :db_column_names, :association_names, :column_names
 
   def manifest
     @controller_superclass = Admin::BaseController
     @model = class_name.gsub(/(\w+::)*/, '').singularize.constantize
 
-    column_names = @model.column_names.map(&:to_sym)
-    association_names = @model.reflections.keys.map(&:to_sym)
-    @column_names = column_names + association_names
+    @db_column_names = @model.column_names.map(&:to_sym)
+    @association_names = @model.reflections.keys.map(&:to_sym)
+    @column_names = @db_column_names + @association_names
     # Move some columns to the end, including all timestamps
     [:created_at, :updated_at].each do |column_name|
       if @column_names.delete column_name

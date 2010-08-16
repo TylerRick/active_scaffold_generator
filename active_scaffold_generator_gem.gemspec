@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{active_scaffold_generator_gem}
-  s.version = "0.1.2"
+  s.version = "0.1.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Tyler Rick"]
-  s.date = %q{2010-08-13}
+  s.date = %q{2010-08-16}
   s.description = %q{This generator creates a controller with the given name and adds an active_scaffold declaration inside of it, listing all column names and association names, so that you can quickly start customizing it (reordering or removing columns, for example).}
   s.email = %q{github.com@tylerrick.com}
   s.extra_rdoc_files = [
